@@ -8,7 +8,7 @@
   <%- if flash[:commerce_tracking] -%>
   
   _gaq.push(['_addTrans',
-    '<%= "#{"QA-" if request.server_name =~ /^(dev.|localhost)/ }#{@order.number}" %>', // order ID - required
+    '<%= @order.number %>', // order ID - required
     '<%= tracker.store.name -%>', // affiliation or store name
     '<%= @order.total -%>', // total - required
     '<%= @order.adjustments.tax.sum(:amount).to_s -%>', // tax
@@ -20,7 +20,7 @@
 
    <%- @order.line_items.each do |line_item| -%>
   _gaq.push(['_addItem',
-    '<%= "#{"QA-" if request.server_name =~ /^(dev.|localhost)/ }#{@order.number}" %>', // order ID - required
+    '<%= @order.number %>', // order ID - required
     '<%= line_item.variant.sku -%>', // SKU/code - required
     '<%= line_item.variant.product.name -%>', // product name
     '-', // category or variation
