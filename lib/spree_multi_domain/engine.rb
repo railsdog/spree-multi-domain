@@ -50,6 +50,12 @@ module SpreeMultiDomain
           @current_order
         end
         alias_method_chain :current_order, :multi_domain
+
+        def current_currency
+          currency = current_store.try(:default_currency)
+          currency = Spree::Config[:currency] if currency.blank?
+          currency
+        end
       end
     end
 
