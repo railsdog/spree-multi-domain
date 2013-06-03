@@ -18,4 +18,10 @@ class Spree::OrderMailer < ActionMailer::Base
     mail_params[:from] = @order.store.email if @order.store.email.present?
     mail(mail_params)
   end
+
+  private
+
+  def find_order(order)
+    @order = order.is_a?(Spree::Order) ? order : Spree::Order.find(order)
+  end
 end
