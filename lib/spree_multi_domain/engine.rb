@@ -20,10 +20,10 @@ module SpreeMultiDomain
     initializer "templates with dynamic layouts" do |app|
       ActionView::TemplateRenderer.class_eval do
         def find_layout_with_multi_store(layout, locals)
-          store_layout = layout
+          store_layout = layout.is_a?(String) ? layout : layout.call
 
           if @view.respond_to?(:current_store) && @view.current_store && !@view.controller.is_a?(Spree::Admin::BaseController)
-            store_layout = layout.call.gsub("layouts/", "layouts/#{@view.current_store.code}/")
+            store_layout = store_layout.gsub("layouts/", "layouts/#{@view.current_store.code}/")
           end
 
           begin
