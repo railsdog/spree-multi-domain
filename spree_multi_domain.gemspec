@@ -23,10 +23,11 @@ Gem::Specification.new do |s|
   s.add_dependency 'spree_frontend', version
   s.add_dependency 'spree_api', version
 
-  s.add_development_dependency 'capybara', '~> 1.1.4'
+  s.add_development_dependency 'capybara', '~> 2.1.0'
   # This is the version used in Spree 1.3.2
-  s.add_development_dependency 'factory_girl', '~> 2.6.4'
+  s.add_development_dependency 'factory_girl', '~> 4.3.0'
   s.add_development_dependency 'ffaker'
-  s.add_development_dependency 'rspec-rails',  '~> 2.7'
+  s.add_development_dependency 'rspec-rails',  '~> 2.14'
   s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'pry'
 end
