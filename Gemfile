@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails'
+gem 'rails', '3.2.17'
 
 version = '2-0-stable'
 gem 'spree_core', :github => "spree/spree", :branch => version
