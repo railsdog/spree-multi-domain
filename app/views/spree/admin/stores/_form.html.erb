@@ -29,7 +29,7 @@
   <div class="four columns">
     <%= f.field_container :mail_from_address do %>
       <%= f.label :mail_from_address, Spree.t(:send_mails_as) %><br />
-      <%= f.text_field :mail_from_address, :class => 'fullwidth' %>
+      <%= f.text_field :mail_from_address, :class => 'fullwidth', :placeholder => 'support@example.com' %>
       <%= error_message_on :store, :mail_from_address %>
     <% end %>
   </div>
