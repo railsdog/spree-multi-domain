@@ -1,0 +1,25 @@
+---
+zh-CH:
+  spree:
+    back_to_store_list: 返回商店列表
+    default_currency: 默认货币
+    send_mail_as: 寄件人
+    logo: 图标
+    payment_method: 付款方式
+    shipping_method: 出货方式
+    store: 商店
+    stores: 商店
+    new_store: 新增商店
+    domains: 域名
+    stores_admin: "商店及域名"
+    manage_stores: 设定多个商店或相关域名
+    editing_store: 修改商店
+    default: 默认
+    store_name: 名称
+    store_code: 编码
+    promotion_rule_types:
+      store:
+        name: 商店
+        description: "商店必需起码符合列表中一项"
+    store_rule:
+      choose_stores: "选取商店"
