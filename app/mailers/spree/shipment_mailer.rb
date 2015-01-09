@@ -5,7 +5,7 @@ module Spree
       subject = (resend ? "[#{Spree.t(:resend).upcase}] " : '')
       subject += "#{Spree::Store.current.name} #{Spree.t('shipment_mailer.shipped_email.subject')} ##{@shipment.order.number}"
 
-      mail_params = {:to => @shipment.order.email, :subject => subject}
+      mail_params = { to: @shipment.order.email, subject: subject }
       if @shipment.order.store && @shipment.order.store.mail_from_address.present?
         mail_params[:from] = @shipment.order.store.mail_from_address
       else
