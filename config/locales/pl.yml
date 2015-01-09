@@ -1,10 +1,25 @@
+---
 pl:
-  store: "Sklep"
-  stores: "Sklepy"
-  new_store: "Nowy Sklep"
-  domains: "Domeny"
-  stores_admin: "Sklepy & Domeny"
-  manage_stores: "Skonfiguruj wiele sklepów i powiązane z nimi domeny"
-  editing_store: "Edcja sklepu"
-  default: "Domyślny"
-
+  spree:
+    back_to_store_list:
+    default_currency:
+    send_mail_as:
+    logo:
+    payment_method:
+    shipping_method:
+    store: Sklep
+    stores: Sklepy
+    new_store: Nowy Sklep
+    domains: Domeny
+    stores_admin: "Sklepy & Domeny"
+    manage_stores: Skonfiguruj wiele sklepów i powiązane z nimi domeny
+    editing_store: Edcja sklepu
+    default: Domyślny
+    store_name:
+    store_code:
+    promotion_rule_types:
+      store:
+        name:
+        description:
+    store_rule:
+      choose_stores:

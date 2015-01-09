@@ -1,9 +1,25 @@
+---
 ru:
-  store: "Магазин"
-  stores: "Магазины"
-  new_store: "Новый магазин"
-  domains: "Домены"
-  stores_admin: "Магазины и домены"
-  manage_stores: "Управление магазинами и привязка доменов"
-  editing_store: "Редактирование магазина"
-  default: "По умолчанию"
+  spree:
+    back_to_store_list:
+    default_currency:
+    send_mail_as:
+    logo:
+    payment_method:
+    shipping_method:
+    store: Магазин
+    stores: Магазины
+    new_store: Новый магазин
+    domains: Домены
+    stores_admin: "Sklepy & Domeny"
+    manage_stores: Управление магазинами и привязка доменов
+    editing_store: Редактирование магазина
+    default: Domyślny
+    store_name:
+    store_code:
+    promotion_rule_types:
+      store:
+        name:
+        description:
+    store_rule:
+      choose_stores:
