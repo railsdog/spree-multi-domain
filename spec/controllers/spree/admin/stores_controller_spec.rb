@@ -1,12 +1,10 @@
-require 'spec_helper'
-
-describe Spree::Admin::StoresController do
+describe Spree::Admin::StoresController, type: :controller do
   stub_authorization!
 
-  describe "on :index" do
-    it "renders index" do
+  describe '#index' do
+    it 'renders index' do
       spree_get :index
-      response.should be_success
+      expect(response).to be_success
     end
   end
 end
