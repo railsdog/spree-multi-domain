@@ -7,13 +7,13 @@ Gem::Specification.new do |s|
   s.description = 'Multiple Spree stores on different domains - single unified backed for processing orders.'
   s.required_ruby_version = '>= 1.8.7'
 
-  s.authors           = ['Brian Quinn', 'Roman Smirnov', 'David North']
-  s.email             = 'brian@railsdog.com'
-  s.homepage          = 'http://spreecommerce.com'
-  s.rubyforge_project = 'spree_multi_domain'
+  s.authors   = ['Brian Quinn', 'Roman Smirnov', 'David North']
+  s.email     = 'brian@railsdog.com'
+  s.homepage  = 'http://spreecommerce.com'
+  s.license   = 'BSD-3'
 
-  s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.files        = `git ls-files`.split("\n")
+  s.test_files   = `git ls-files -- spec/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
 
