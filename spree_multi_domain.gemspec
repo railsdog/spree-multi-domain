@@ -23,11 +23,16 @@ Gem::Specification.new do |s|
   s.add_dependency 'spree_frontend', version
   s.add_dependency 'spree_api', version
 
-  s.add_development_dependency 'capybara', '~> 1.1.4'
-  s.add_development_dependency 'coffee-rails'
-  s.add_development_dependency 'factory_girl', '~> 4.3.0'
+  s.add_development_dependency 'capybara', '~> 2.4.4'
+  s.add_development_dependency 'coffee-rails', '~> 4.0.0'
+  s.add_development_dependency 'database_cleaner', '~> 1.3.0'
+  s.add_development_dependency 'factory_girl', '~> 4.4'
   s.add_development_dependency 'ffaker'
-  s.add_development_dependency 'rspec-rails',  '~> 2.7'
-  s.add_development_dependency 'sass-rails', '~> 4.0.2'
-  s.add_development_dependency 'sqlite3'
+  s.add_development_dependency 'poltergeist', '~> 1.5.0'
+  s.add_development_dependency 'pry-rails'
+  s.add_development_dependency 'rspec-rails', '~> 2.4'
+  s.add_development_dependency 'sass-rails', '~> 4.0.0'
+  s.add_development_dependency 'sqlite3', '~> 1.3.10'
+  s.add_development_dependency 'selenium-webdriver', '>= 2.41'
+  s.add_development_dependency 'simplecov', '~> 0.9.0'
 end
