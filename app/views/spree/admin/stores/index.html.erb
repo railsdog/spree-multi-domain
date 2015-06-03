@@ -3,7 +3,7 @@
 <% end %>
 
 <% content_for :page_actions do %>
-  <%= button_link_to Spree.t(:new_store), new_object_url,  :icon => 'icon-plus', :id => 'admin_new_store_link' %>
+  <%= button_link_to Spree.t(:new_store), new_object_url, :class => "btn-success", :icon => 'add', :id => 'admin_new_store_link' %>
 <% end %>
 
 <table class="index table" id='listing_stores'>
