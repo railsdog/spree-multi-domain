@@ -1,55 +1,53 @@
 <div data-hook="admin_store_form_fields">
-  <div class="alpha four columns">
+  <div class="form-group">
     <%= f.field_container :name do %>
       <%= f.label :name, Spree.t(:store_name) %><br />
-      <%= f.text_field :name, :class => 'fullwidth' %>
+      <%= f.text_field :name, :class => 'fullwidth form-control' %>
       <%= error_message_on :store, :name %>
     <% end %>
   </div>
 
-  <div class="four columns">
+  <div class="form-group">
     <%= f.field_container :code do %>
       <%= f.label :code, Spree.t(:store_code) %><br />
-      <%= f.text_field :code, :class => 'fullwidth' %>
+      <%= f.text_field :code, :class => 'fullwidth form-control' %>
       <%= error_message_on :store, :code %>
     <% end %>
   </div>
 
-  <div class="two columns">
+  <div class="form-group">
     <%= f.field_container :default do %>
       <%= f.label :default, Spree.t(:default) %>
-      <ul>
-        <li><%= f.radio_button :default, "true", :class => 'fullwidth' %> <%= Spree.t(:yes) %></li>
-        <li><%= f.radio_button :default, "false", :class => 'fullwidth' %> <%= Spree.t(:no) %></li>
-      </ul>
+        <%= f.radio_button :default, "true", :class => 'form-control' %> <%= Spree.t(:yes) %>
+        <%= f.radio_button :default, "false", :class => 'form-control' %> <%= Spree.t(:no) %>
       <%= error_message_on :store, :default %>
     <% end %>
   </div>
 
-  <div class="four columns">
+  <div class="form-group">
     <%= f.field_container :mail_from_address do %>
       <%= f.label :mail_from_address, Spree.t(:send_mails_as) %><br />
-      <%= f.text_field :mail_from_address, :class => 'fullwidth' %>
+      <%= f.text_field :mail_from_address, :class => 'fullwidth form-control' %>
       <%= error_message_on :store, :mail_from_address %>
     <% end %>
   </div>
 
-  <div class="four columns">
+  <div class="form-group">
     <%= f.field_container :default_currency do %>
       <%= f.label :default_currency, Spree.t(:default_currency) %>
-      <%= f.text_field :default_currency %>
+      <%= f.text_field :default_currency, :class => "fullwidth form-control" %>
     <% end %>
   </div>
 
-  <div class="six columns">
+  <div class="six columns form-group">
     <%= f.field_container :url do %>
       <%= f.label :url, Spree.t(:domains) %><br />
-      <%= f.text_area :url, :cols => 60, :rows => 4, :class => 'fullwidth' %>
+      <%= f.text_area :url, :cols => 60, :rows => 4, :class => 'fullwidth form-control' %>
       <%= error_message_on :store, :url %>
     <% end %>
   </div>
 
-  <div class="eight columns">
+  <div class="form-group">
     <%= image_tag @store.logo %>
     <%= f.field_container :logo do %>
       <%= f.label :logo, Spree.t(:logo) %><br />
@@ -59,7 +57,7 @@
   </div>
 
   <div class='row'>
-    <div class="alpha six columns">
+    <div class="form-group">
       <%= f.field_container :payment_methods do %>
         <%= f.label :payment_methods, Spree.t(:payment_methods) %><br />
         <% @payment_methods.each do |payment_method| %>
@@ -73,7 +71,7 @@
       <% end %>
     </div>
 
-    <div class="omega six columns">
+    <div class="form-group">
       <%= f.field_container :shipping_methods do %>
         <%= f.label :shipping_methods, Spree.t(:shipping_methods) %><br />
         <% @shipping_methods.each do |shipping_method| %>
