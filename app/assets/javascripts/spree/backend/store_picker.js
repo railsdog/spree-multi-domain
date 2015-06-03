@@ -14,7 +14,7 @@ $.fn.storeAutocomplete = function() {
         return { q: term }
       },
       results: function(data, page) {
-        return { results: data }
+        return { results: data.stores }
       }
     },
     formatResult: function(store) {
